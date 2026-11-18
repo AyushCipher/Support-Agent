@@ -1,0 +1,33 @@
+{
+ "backend": "gemini",
+ "dry_run": false,
+ "models": {
+  "fast": "gemini-3.5-flash-lite",
+  "strong": "gemini-3.5-flash",
+  "verifier": "gemini-3.5-flash"
+ },
+ "sets": [
+  "main",
+  "heldout"
+ ],
+ "configs": [
+  "+tool_guards"
+ ],
+ "trials_per_scenario": 1,
+ "planned_scenario_trials": 60,
+ "already_done_before_this_run": 0,
+ "completed_this_run": 8,
+ "errored_this_run": 0,
+ "stopped_early": [
+  "quota exhausted: daily quota exhausted for gemini-3.5-flash-lite"
+ ],
+ "network_requests_this_run": 7,
+ "cache_hits_this_run": 40,
+ "retries_this_run": 0,
+ "estimated_usd_this_run": 0.00168,
+ "pricing_note": "estimated from PLACEHOLDER per-token prices in config.PRICING",
+ "wall_seconds": 77.8,
+ "mock_requests": null,
+ "mock_faults_sent": null,
+ "finished_utc": "2026-11-11T08:32:00Z"
+}

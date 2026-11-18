@@ -1,0 +1,30 @@
+{
+ "backend": "anthropic",
+ "dry_run": true,
+ "models": {
+  "fast": "claude-haiku-5-5",
+  "strong": "claude-sonnet-5-5",
+  "verifier": "claude-sonnet-5-5"
+ },
+ "sets": [
+  "heldout"
+ ],
+ "configs": [
+  "full"
+ ],
+ "trials_per_scenario": 1,
+ "planned_scenario_trials": 12,
+ "already_done_before_this_run": 0,
+ "completed_this_run": 12,
+ "errored_this_run": 0,
+ "stopped_early": [],
+ "network_requests_this_run": 68,
+ "cache_hits_this_run": 0,
+ "retries_this_run": 15,
+ "estimated_usd_this_run": 0.05224,
+ "pricing_note": "estimated from PLACEHOLDER per-token prices in config.PRICING",
+ "wall_seconds": 24.1,
+ "mock_requests": 68,
+ "mock_faults_sent": 15,
+ "finished_utc": "2026-11-09T18:16:58Z"
+}

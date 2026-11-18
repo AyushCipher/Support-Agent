@@ -1,0 +1,45 @@
+{"cache": "miss", "in_tok": 135, "out_tok": 16, "usd": 2e-05, "latency_s": 0.87, "http_requests": 1, "ts": 1794248538.47, "trial": "baseline|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 135, "out_tok": 16, "usd": 2e-05, "latency_s": 5.25, "http_requests": 1, "ts": 1794248542.87, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1255, "out_tok": 24, "usd": 0.000135, "latency_s": 8.25, "http_requests": 1, "ts": 1794248546.75, "trial": "baseline|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1429, "out_tok": 12, "usd": 0.000148, "latency_s": 10.86, "http_requests": 1, "ts": 1794248553.76, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1303, "out_tok": 44, "usd": 0.000148, "latency_s": 7.92, "http_requests": 1, "ts": 1794248554.77, "trial": "baseline|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2171, "out_tok": 12, "usd": 0.000222, "latency_s": 5.22, "http_requests": 1, "ts": 1794248559.05, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 147, "out_tok": 20, "usd": 2.3e-05, "latency_s": 7.77, "http_requests": 1, "ts": 1794248562.75, "trial": "baseline|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2227, "out_tok": 184, "usd": 0.000296, "latency_s": 7.89, "http_requests": 1, "ts": 1794248567.4, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1267, "out_tok": 25, "usd": 0.000137, "latency_s": 8.3, "http_requests": 1, "ts": 1794248571.14, "trial": "baseline|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2442, "out_tok": 53, "usd": 0.000265, "latency_s": 8.69, "http_requests": 1, "ts": 1794248576.18, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1445, "out_tok": 34, "usd": 0.000158, "latency_s": 7.36, "http_requests": 1, "ts": 1794248578.62, "trial": "baseline|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2532, "out_tok": 36, "usd": 0.000268, "latency_s": 9.59, "http_requests": 1, "ts": 1794248585.86, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1566, "out_tok": 69, "usd": 0.000184, "latency_s": 7.83, "http_requests": 1, "ts": 1794248586.63, "trial": "baseline|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2699, "out_tok": 42, "usd": 0.000287, "latency_s": 4.78, "http_requests": 1, "ts": 1794248590.73, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1706, "out_tok": 77, "usd": 0.000201, "latency_s": 8.13, "http_requests": 1, "ts": 1794248594.87, "trial": "baseline|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 147, "out_tok": 20, "ts": 1794248595.04, "trial": "full|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2865, "out_tok": 36, "usd": 0.000301, "latency_s": 7.92, "http_requests": 1, "ts": 1794248598.78, "trial": "full|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1441, "out_tok": 25, "usd": 0.000154, "latency_s": 7.77, "http_requests": 1, "ts": 1794248602.85, "trial": "full|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 139, "out_tok": 16, "usd": 2e-05, "latency_s": 7.65, "http_requests": 1, "ts": 1794248606.55, "trial": "baseline|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1659, "out_tok": 35, "usd": 0.00018, "latency_s": 8.14, "http_requests": 1, "ts": 1794248611.03, "trial": "full|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1259, "out_tok": 25, "usd": 0.000136, "latency_s": 8.35, "http_requests": 1, "ts": 1794248614.92, "trial": "baseline|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1818, "out_tok": 61, "usd": 0.000206, "latency_s": 7.69, "http_requests": 1, "ts": 1794248618.75, "trial": "full|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1444, "out_tok": 70, "usd": 0.000172, "latency_s": 7.75, "http_requests": 1, "ts": 1794248622.7, "trial": "baseline|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 16, "ts": 1794248622.76, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1983, "out_tok": 73, "usd": 0.000228, "latency_s": 8.0, "http_requests": 1, "ts": 1794248626.8, "trial": "full|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1433, "out_tok": 25, "usd": 0.000153, "latency_s": 8.25, "http_requests": 1, "ts": 1794248631.02, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 139, "out_tok": 18, "usd": 2.1e-05, "latency_s": 7.52, "http_requests": 1, "ts": 1794248634.4, "trial": "baseline|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1657, "out_tok": 36, "usd": 0.00018, "latency_s": 7.43, "http_requests": 1, "ts": 1794248638.47, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 554, "out_tok": 25, "usd": 6.5e-05, "latency_s": 8.16, "http_requests": 1, "ts": 1794248642.57, "trial": "baseline|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1824, "out_tok": 42, "usd": 0.000199, "latency_s": 8.07, "http_requests": 1, "ts": 1794248646.56, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 740, "out_tok": 49, "usd": 9.4e-05, "latency_s": 7.86, "http_requests": 1, "ts": 1794248650.45, "trial": "baseline|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 18, "ts": 1794248650.52, "trial": "full|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1990, "out_tok": 61, "usd": 0.000223, "latency_s": 9.41, "http_requests": 1, "ts": 1794248656.02, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 642, "out_tok": 25, "usd": 7.4e-05, "latency_s": 8.14, "http_requests": 1, "ts": 1794248658.66, "trial": "full|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2070, "out_tok": 25, "usd": 0.000217, "latency_s": 6.26, "http_requests": 1, "ts": 1794248662.29, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 867, "out_tok": 59, "usd": 0.00011, "latency_s": 8.19, "http_requests": 1, "ts": 1794248666.87, "trial": "full|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2290, "out_tok": 36, "usd": 0.000243, "latency_s": 8.29, "http_requests": 1, "ts": 1794248670.61, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 139, "out_tok": 22, "usd": 2.3e-05, "latency_s": 7.79, "http_requests": 1, "ts": 1794248674.74, "trial": "baseline|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2458, "out_tok": 43, "usd": 0.000263, "latency_s": 8.0, "http_requests": 1, "ts": 1794248678.63, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 354, "out_tok": 25, "usd": 4.5e-05, "latency_s": 8.16, "http_requests": 1, "ts": 1794248682.9, "trial": "baseline|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2614, "out_tok": 36, "usd": 0.000276, "latency_s": 8.04, "http_requests": 1, "ts": 1794248686.71, "trial": "full|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 22, "ts": 1794248686.76, "trial": "full|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 615, "out_tok": 63, "usd": 8.7e-05, "latency_s": 7.57, "http_requests": 1, "ts": 1794248690.49, "trial": "baseline|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 423, "out_tok": 24, "usd": 5.2e-05, "latency_s": 7.56, "http_requests": 1, "ts": 1794248694.33, "trial": "full|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 747, "out_tok": 70, "usd": 0.000103, "latency_s": 4.22, "http_requests": 1, "ts": 1794248698.56, "trial": "full|main|P01|0", "model": "gemini-3.5-flash-lite"}

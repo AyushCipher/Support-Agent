@@ -1,0 +1,43 @@
+# Render Blueprint (https://render.com/docs/blueprint-spec). NOT deployed by this repo: see docs/deploy.md for the exact steps.
+# Secrets are never committed: `sync: false` values are entered in the Render dashboard on first apply; `generateValue: true`
+# values are generated once by Render and then stay stable (SA_VAULT_KEY MUST stay stable or sealed PII becomes unreadable).
+services:
+  - type: web
+    name: supportagent
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter                    # a persistent disk needs a paid instance type; SQLite state lives on it
+    numInstances: 1                  # SQLite + in-process approvals: exactly ONE instance (docs/adr/0006-scaling-plan.md)
+    healthCheckPath: /healthz
+    autoDeploy: false
+    disk:
+      name: supportagent-runs
+      mountPath: /app/runs
+      sizeGB: 1
+    envVars:
+      - key: SA_ENV
+        value: production            # startup refuses any insecure config (security/prodcheck.py)
+      - key: SA_BACKEND
+        value: gemini
+      - key: SA_CONFIG
+        value: full
+      - key: SA_MODEL_FAST
+        value: gemini-3.5-flash-lite
+      - key: SA_MODEL_STRONG
+        value: gemini-3.5-flash
+      - key: SA_MODEL_VERIFIER
+        value: gemini-3.5-flash
+      - key: SA_RUNS_DIR
+        value: /app/runs
+      - key: SA_PUBLIC_DEMO           # explicit opt-in: the chat's customer picker is trusted (seeded fake customers only).
+        value: "1"                    # For real customers remove this and set SA_CUSTOMER_OIDC_JWKS / _ISSUER / _AUDIENCE.
+      - key: GEMINI_API_KEY
+        sync: false                   # paste in the dashboard; never commit it
+      - key: SA_VAULT_KEY
+        generateValue: true           # master passphrase for AES-GCM at rest; keep stable, back up separately from the disk
+      - key: SA_SESSION_SECRET
+        generateValue: true           # signs per-session customer tokens
+      - key: SA_ADMIN_TOKEN
+        generateValue: true           # reviewer desk / admin API bearer token (or configure SA_OIDC_* instead)
+      - key: SA_GEMINI_RPM
+        sync: false                   # optional request pacing for rate-limited keys (e.g. a free-tier per-minute limit); 0 = off

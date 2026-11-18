@@ -1,0 +1,68 @@
+{"cache": "miss", "in_tok": 121, "out_tok": 17, "usd": 0.000206, "latency_s": 1.78, "http_requests": 1, "ts": 1794248212.33, "trial": "full|heldout|HX01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 113, "out_tok": 17, "usd": 0.000198, "latency_s": 1.82, "http_requests": 1, "ts": 1794248212.33, "trial": "full|heldout|HI01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1008, "out_tok": 14, "usd": 0.001078, "latency_s": 0.13, "http_requests": 1, "ts": 1794248212.48, "trial": "full|heldout|HX01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 469, "out_tok": 31, "usd": 0.000624, "latency_s": 0.37, "http_requests": 1, "ts": 1794248212.74, "trial": "full|heldout|HI01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1052, "out_tok": 27, "usd": 0.001187, "latency_s": 0.47, "http_requests": 1, "ts": 1794248212.99, "trial": "full|heldout|HX01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 112, "out_tok": 17, "usd": 0.000197, "latency_s": 0.06, "http_requests": 1, "ts": 1794248213.22, "trial": "full|heldout|HP01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248213.29, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1000, "out_tok": 14, "usd": 0.00107, "latency_s": 0.14, "http_requests": 1, "ts": 1794248213.39, "trial": "full|heldout|HP01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 113, "out_tok": 17, "usd": 0.000198, "latency_s": 0.18, "http_requests": 1, "ts": 1794248213.47, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248213.55, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1109, "out_tok": 20, "usd": 0.001209, "latency_s": 0.16, "http_requests": 1, "ts": 1794248213.57, "trial": "full|heldout|HP01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 469, "out_tok": 21, "usd": 0.000574, "latency_s": 0.1, "http_requests": 1, "ts": 1794248213.66, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1213, "out_tok": 26, "usd": 0.001343, "latency_s": 0.12, "http_requests": 1, "ts": 1794248213.72, "trial": "full|heldout|HP01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248213.81, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1299, "out_tok": 36, "usd": 0.001479, "latency_s": 0.17, "http_requests": 1, "ts": 1794248213.93, "trial": "full|heldout|HP01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1021, "out_tok": 46, "usd": 0.001251, "latency_s": 0.21, "http_requests": 1, "ts": 1794248214.02, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 116, "out_tok": 17, "usd": 0.000201, "latency_s": 0.16, "http_requests": 1, "ts": 1794248214.16, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1077, "out_tok": 14, "usd": 0.001147, "latency_s": 0.22, "http_requests": 1, "ts": 1794248214.26, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1004, "out_tok": 14, "usd": 0.001074, "latency_s": 0.19, "http_requests": 1, "ts": 1794248214.37, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1182, "out_tok": 20, "usd": 0.001282, "latency_s": 0.14, "http_requests": 1, "ts": 1794248214.43, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248214.49, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248214.54, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1113, "out_tok": 20, "usd": 0.001213, "latency_s": 0.1, "http_requests": 1, "ts": 1794248214.59, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1286, "out_tok": 26, "usd": 0.001416, "latency_s": 0.08, "http_requests": 1, "ts": 1794248214.61, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1217, "out_tok": 26, "usd": 0.001347, "latency_s": 0.1, "http_requests": 1, "ts": 1794248214.72, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1372, "out_tok": 36, "usd": 0.001552, "latency_s": 0.12, "http_requests": 1, "ts": 1794248214.81, "trial": "full|heldout|HM01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1303, "out_tok": 36, "usd": 0.001483, "latency_s": 0.1, "http_requests": 1, "ts": 1794248214.88, "trial": "full|heldout|HE01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248214.92, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 121, "out_tok": 19, "usd": 0.000216, "latency_s": 0.04, "http_requests": 1, "ts": 1794248214.96, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 112, "out_tok": 17, "usd": 0.000197, "latency_s": 0.15, "http_requests": 1, "ts": 1794248215.14, "trial": "full|heldout|HF01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 477, "out_tok": 22, "usd": 0.000587, "latency_s": 0.12, "http_requests": 1, "ts": 1794248215.18, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1000, "out_tok": 14, "usd": 0.00107, "latency_s": 0.12, "http_requests": 1, "ts": 1794248215.29, "trial": "full|heldout|HF01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248215.35, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1041, "out_tok": 27, "usd": 0.001176, "latency_s": 0.12, "http_requests": 1, "ts": 1794248215.43, "trial": "full|heldout|HF01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248215.43, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1030, "out_tok": 15, "usd": 0.001105, "latency_s": 0.11, "http_requests": 1, "ts": 1794248215.54, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 117, "out_tok": 17, "usd": 0.000202, "latency_s": 0.06, "http_requests": 1, "ts": 1794248215.61, "trial": "full|heldout|HX02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1130, "out_tok": 15, "usd": 0.001205, "latency_s": 0.1, "http_requests": 1, "ts": 1794248215.68, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 473, "out_tok": 31, "usd": 0.000628, "latency_s": 0.13, "http_requests": 1, "ts": 1794248215.77, "trial": "full|heldout|HX02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1203, "out_tok": 21, "usd": 0.001308, "latency_s": 0.15, "http_requests": 1, "ts": 1794248215.88, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 120, "out_tok": 17, "usd": 0.000205, "latency_s": 0.11, "http_requests": 1, "ts": 1794248215.97, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248216.01, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1007, "out_tok": 14, "usd": 0.001077, "latency_s": 0.07, "http_requests": 1, "ts": 1794248216.06, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248216.14, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1139, "out_tok": 20, "usd": 0.001239, "latency_s": 0.14, "http_requests": 1, "ts": 1794248216.24, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1271, "out_tok": 22, "usd": 0.001381, "latency_s": 0.19, "http_requests": 1, "ts": 1794248216.33, "trial": "full|heldout|HS01|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1243, "out_tok": 26, "usd": 0.001373, "latency_s": 0.19, "http_requests": 1, "ts": 1794248216.46, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 112, "out_tok": 17, "usd": 0.000197, "latency_s": 0.16, "http_requests": 1, "ts": 1794248216.56, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248216.62, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 999, "out_tok": 46, "usd": 0.001229, "latency_s": 0.15, "http_requests": 1, "ts": 1794248216.74, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1328, "out_tok": 36, "usd": 0.001508, "latency_s": 0.19, "http_requests": 1, "ts": 1794248216.82, "trial": "full|heldout|HI02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1055, "out_tok": 14, "usd": 0.001125, "latency_s": 0.13, "http_requests": 1, "ts": 1794248216.9, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 123, "out_tok": 17, "usd": 0.000208, "latency_s": 0.08, "http_requests": 1, "ts": 1794248216.97, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1175, "out_tok": 20, "usd": 0.001275, "latency_s": 0.1, "http_requests": 1, "ts": 1794248217.03, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248217.09, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248217.16, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1011, "out_tok": 14, "usd": 0.001081, "latency_s": 0.13, "http_requests": 1, "ts": 1794248217.21, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1279, "out_tok": 26, "usd": 0.001409, "latency_s": 0.15, "http_requests": 1, "ts": 1794248217.3, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1215, "out_tok": 20, "usd": 0.001315, "latency_s": 0.27, "http_requests": 1, "ts": 1794248217.51, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1365, "out_tok": 36, "usd": 0.001545, "latency_s": 0.24, "http_requests": 1, "ts": 1794248217.59, "trial": "full|heldout|HM02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1319, "out_tok": 26, "usd": 0.001449, "latency_s": 0.15, "http_requests": 1, "ts": 1794248217.69, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 116, "out_tok": 17, "usd": 0.000201, "latency_s": 0.11, "http_requests": 1, "ts": 1794248217.78, "trial": "full|heldout|HE02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248217.84, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1004, "out_tok": 14, "usd": 0.001074, "latency_s": 0.08, "http_requests": 1, "ts": 1794248217.88, "trial": "full|heldout|HE02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1405, "out_tok": 36, "usd": 0.001585, "latency_s": 0.1, "http_requests": 1, "ts": 1794248217.94, "trial": "full|heldout|HP02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "error": "Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'mock fault'}}", "retry_in": 0.0, "ts": 1794248217.99, "trial": "full|heldout|HE02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1113, "out_tok": 20, "usd": 0.001213, "latency_s": 0.12, "http_requests": 1, "ts": 1794248218.11, "trial": "full|heldout|HE02|0", "model": "claude-haiku-5-5"}
+{"cache": "miss", "in_tok": 1211, "out_tok": 63, "usd": 0.001526, "latency_s": 0.1, "http_requests": 1, "ts": 1794248218.26, "trial": "full|heldout|HE02|0", "model": "claude-haiku-5-5"}

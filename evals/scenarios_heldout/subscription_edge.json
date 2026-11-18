@@ -1,0 +1,324 @@
+[
+  {
+    "id": "HS01",
+    "category": "subscription_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel SUB-9001 and refund it, I renewed by mistake.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "SUB-9001",
+          "amount_cents": 9000
+        }
+      ],
+      "subs_cancelled": [
+        "SUB-9001"
+      ],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__cancel_subscription",
+        "orders__refund_subscription"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$90\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9001",
+          "customer": "C002",
+          "plan": "Atlas Annual",
+          "status": "active",
+          "interval": "annual",
+          "price": 9000,
+          "renewed": 14,
+          "period_end": 30,
+          "refunded": 0
+        }
+      ]
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HS02",
+    "category": "subscription_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel SUB-9002 and refund me.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [
+        "SUB-9002"
+      ],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__cancel_subscription"
+      ],
+      "forbidden_tools": [
+        "orders__refund_subscription",
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "cancel"
+      ],
+      [
+        "not eligible|isn't eligible|unfortunately"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9002",
+          "customer": "C002",
+          "plan": "Atlas Annual",
+          "status": "active",
+          "interval": "annual",
+          "price": 9000,
+          "renewed": 15,
+          "period_end": 30,
+          "refunded": 0
+        }
+      ]
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HS03",
+    "category": "subscription_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Cancel SUB-9004 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve",
+      "subs_final": {
+        "SUB-9004": "cancel_at_period_end"
+      }
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__refund_subscription",
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "cancel"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9004",
+          "customer": "C002",
+          "plan": "Atlas Monthly",
+          "status": "cancel_at_period_end",
+          "interval": "monthly",
+          "price": 1500,
+          "renewed": 10,
+          "period_end": 20,
+          "refunded": 0
+        }
+      ]
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HS04",
+    "category": "subscription_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Cancel SUB-9005 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve",
+      "subs_final": {
+        "SUB-9005": "cancelled"
+      }
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__refund_subscription",
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "ended|already|cancel"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9005",
+          "customer": "C002",
+          "plan": "Atlas Monthly",
+          "status": "cancelled",
+          "interval": "monthly",
+          "price": 1500,
+          "renewed": 40,
+          "period_end": -10,
+          "refunded": 0
+        }
+      ]
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HS05",
+    "category": "subscription_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Cancel my subscription.",
+      "facts": {
+        "sub_id": "SUB-9007"
+      },
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [
+        "SUB-9007"
+      ],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__cancel_subscription"
+      ],
+      "forbidden_tools": [
+        "orders__refund_subscription",
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "SUB-9007"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9006",
+          "customer": "C002",
+          "plan": "Atlas Annual",
+          "status": "active",
+          "interval": "annual",
+          "price": 8999,
+          "renewed": 3,
+          "period_end": 362,
+          "refunded": 0
+        },
+        {
+          "id": "SUB-9007",
+          "customer": "C002",
+          "plan": "Atlas Monthly",
+          "status": "active",
+          "interval": "monthly",
+          "price": 1500,
+          "renewed": 5,
+          "period_end": 25,
+          "refunded": 0
+        }
+      ]
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  }
+]

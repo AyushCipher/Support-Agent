@@ -1,0 +1,71 @@
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  test-and-gate:
+    name: tests + eval gates (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }          # third-party MCP server test uses npx
+      - run: pip install -e ".[dev,anthropic]"   # anthropic SDK: the offline live-pipeline test drives it against a local mock server
+      - run: ruff check src evals tests
+        continue-on-error: true
+      - run: pytest -q
+      - name: Eval regression gate - main suite (simulated model, deterministic)
+        run: python -m evals.ci_gate --trials 4
+      - name: Eval regression gate - HELD-OUT suite (absolute floors + regression budget vs evals/baseline_heldout.json)
+        run: python -m evals.ci_gate --heldout --trials 4
+      - name: Live pipeline dry-run (real client code -> local mock HTTP server, injected 429/503; no key, no cost)
+        run: python -m evals.live --dry-run --backend anthropic --set both --config baseline full --trials 1 --limit-scenarios 16 --mock-fault 7:429 11:529 --backoff-base 0 --run-dir evals/results/live/dryrun_ci
+      - name: Adaptive red-team smoke (offline mutation search, small budget)
+        run: python -m evals.redteam.adaptive --budget 25 --repeats 1 --workers 2 --out evals/results/redteam/adaptive_ci_smoke.json
+      - name: Full ablation + held-out ladder + report (ubuntu only; regenerates docs/results.md from JSON)
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          python -m evals.runner --all --trials 8 --workers 2
+          python -m evals.runner --all --set heldout --trials 4 --workers 2
+          python -m evals.report
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-report-${{ matrix.os }}
+          path: |
+            docs/results.md
+            docs/dashboard.html
+            evals/results/*.json
+            evals/results/heldout/*.json
+            evals/results/redteam/*.json
+            evals/results/live/dryrun_ci/*.jsonl
+            evals/results/live/dryrun_ci/run_meta.json
+  live-eval:                                  # manual: real-model numbers; needs the ANTHROPIC_API_KEY and/or GEMINI_API_KEY repo secret
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -e ".[anthropic]"
+      - name: Live eval (resumable, cached, cost-capped)
+        run: python -m evals.live --backend anthropic --set both --config baseline full --trials 3 --workers 4 --max-usd 5
+        env: { ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}" }
+      - run: python -m evals.live_report
+      - uses: actions/upload-artifact@v4
+        with:
+          name: live-eval
+          path: |
+            docs/live_results.md
+            evals/results/live/summary.json
+            evals/results/live/*/trials.jsonl
+            evals/results/live/*/run_meta.json

@@ -1,0 +1,18 @@
+services:
+  app:
+    build:
+      context: .
+      args: { EXTRAS: "crypto,anthropic,otel" }
+    ports: ["8080:8080"]
+    environment:
+      SA_BACKEND: ${SA_BACKEND:-scripted}          # set to "anthropic" and provide ANTHROPIC_API_KEY for live models
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+      SA_MCP_MODE: ${SA_MCP_MODE:-stdio}           # real MCP servers as subprocesses
+    volumes: ["runs:/app/runs"]
+    depends_on: [jaeger]
+  jaeger:                                          # trace UI: http://localhost:16686
+    image: jaegertracing/all-in-one:1.57
+    environment: { COLLECTOR_OTLP_ENABLED: "true" }
+    ports: ["16686:16686", "4318:4318"]
+volumes: { runs: {} }

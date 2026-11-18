@@ -1,0 +1,565 @@
+[
+  {
+    "id": "HF01",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "any",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__get_order",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF02",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": [
+        "Could you try again please?"
+      ]
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__get_order",
+        "mode": "timeout",
+        "times": 1
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF03",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "any",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__check_refund_eligibility",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF04",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__issue_refund",
+        "mode": "timeout_after_commit",
+        "times": 1
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF05",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__issue_refund",
+        "mode": "error",
+        "times": 1
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF06",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-1001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "any",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__issue_refund",
+        "mode": "error",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF07",
+    "category": "tool_failure",
+    "customer_id": "C005",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-5001 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__issue_refund"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't|specialist"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "tickets__escalate_to_human",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF08",
+    "category": "tool_failure",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel SUB-3001.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "any",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__cancel_subscription",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF09",
+    "category": "tool_failure",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "How long do I have to return something?",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't|specialist"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "kb__search_policy",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF10",
+    "category": "tool_failure",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Where's my order?",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "sorry|unable|couldn't|wasn't able|could not|can't|which order"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "faults": [
+      {
+        "tool": "orders__list_orders",
+        "mode": "timeout",
+        "times": 99
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HF11",
+    "category": "tool_failure",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel SUB-9001 and refund it, I renewed by mistake.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "SUB-9001",
+          "amount_cents": 9000
+        }
+      ],
+      "subs_cancelled": [
+        "SUB-9001"
+      ],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__cancel_subscription",
+        "orders__refund_subscription"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$90\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [],
+      "subscriptions": [
+        {
+          "id": "SUB-9001",
+          "customer": "C002",
+          "plan": "Atlas Annual",
+          "status": "active",
+          "interval": "annual",
+          "price": 9000,
+          "renewed": 14,
+          "period_end": 30,
+          "refunded": 0
+        }
+      ]
+    },
+    "faults": [
+      {
+        "tool": "orders__refund_subscription",
+        "mode": "timeout_after_commit",
+        "times": 1
+      }
+    ],
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  }
+]

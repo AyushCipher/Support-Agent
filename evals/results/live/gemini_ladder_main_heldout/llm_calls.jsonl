@@ -1,0 +1,47 @@
+{"cache": "hit", "in_tok": 135, "out_tok": 16, "ts": 1794385842.33, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 147, "out_tok": 20, "ts": 1794385842.33, "trial": "+tool_guards|heldout|HX01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1429, "out_tok": 12, "ts": 1794385842.34, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1441, "out_tok": 25, "ts": 1794385842.34, "trial": "+tool_guards|heldout|HX01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2171, "out_tok": 12, "ts": 1794385842.35, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1534, "out_tok": 12, "ts": 1794385842.35, "trial": "+tool_guards|heldout|HX01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2227, "out_tok": 184, "ts": 1794385842.36, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2276, "out_tok": 116, "ts": 1794385842.36, "trial": "+tool_guards|heldout|HX01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2442, "out_tok": 53, "ts": 1794385842.36, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2532, "out_tok": 36, "ts": 1794385842.37, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 2699, "out_tok": 42, "ts": 1794385842.38, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 147, "out_tok": 20, "ts": 1794385842.38, "trial": "+tool_guards|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1441, "out_tok": 25, "ts": 1794385842.39, "trial": "+tool_guards|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1659, "out_tok": 35, "ts": 1794385842.4, "trial": "+tool_guards|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1818, "out_tok": 61, "ts": 1794385842.4, "trial": "+tool_guards|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2863, "out_tok": 29, "usd": 0.000298, "latency_s": 2.7, "http_requests": 1, "ts": 1794385845.09, "trial": "+tool_guards|main|M01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 140, "out_tok": 22, "ts": 1794385845.12, "trial": "+tool_guards|heldout|HI01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 643, "out_tok": 25, "ts": 1794385845.12, "trial": "+tool_guards|heldout|HI01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 883, "out_tok": 32, "ts": 1794385845.13, "trial": "+tool_guards|heldout|HI01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 16, "ts": 1794385845.17, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1433, "out_tok": 25, "ts": 1794385845.18, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1657, "out_tok": 36, "ts": 1794385845.18, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1824, "out_tok": 42, "ts": 1794385845.19, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1983, "out_tok": 77, "usd": 0.000229, "latency_s": 7.26, "http_requests": 1, "ts": 1794385849.68, "trial": "+tool_guards|main|E01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 136, "out_tok": 20, "ts": 1794385849.69, "trial": "+tool_guards|heldout|HM01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1430, "out_tok": 12, "ts": 1794385849.7, "trial": "+tool_guards|heldout|HM01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1828, "out_tok": 85, "ts": 1794385849.7, "trial": "+tool_guards|heldout|HM01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1945, "out_tok": 60, "ts": 1794385849.7, "trial": "+tool_guards|heldout|HM01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 18, "ts": 1794385849.72, "trial": "+tool_guards|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 642, "out_tok": 25, "ts": 1794385849.72, "trial": "+tool_guards|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 867, "out_tok": 59, "ts": 1794385849.73, "trial": "+tool_guards|main|T01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 140, "out_tok": 20, "ts": 1794385849.74, "trial": "+tool_guards|heldout|HP01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1434, "out_tok": 25, "ts": 1794385849.75, "trial": "+tool_guards|heldout|HP01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1658, "out_tok": 37, "ts": 1794385849.75, "trial": "+tool_guards|heldout|HP01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1825, "out_tok": 42, "ts": 1794385849.76, "trial": "+tool_guards|heldout|HP01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1987, "out_tok": 46, "usd": 0.000217, "latency_s": 10.81, "http_requests": 1, "ts": 1794385856.02, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2052, "out_tok": 26, "usd": 0.000216, "latency_s": 12.46, "http_requests": 1, "ts": 1794385868.48, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2272, "out_tok": 36, "usd": 0.000242, "latency_s": 8.08, "http_requests": 1, "ts": 1794385876.57, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 2440, "out_tok": 43, "usd": 0.000261, "latency_s": 1.84, "http_requests": 1, "ts": 1794385878.41, "trial": "+tool_guards|main|MR01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 1991, "out_tok": 49, "usd": 0.000219, "latency_s": 31.76, "http_requests": 1, "ts": 1794385881.53, "trial": "+tool_guards|heldout|HP01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 139, "out_tok": 22, "ts": 1794385881.56, "trial": "+tool_guards|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 423, "out_tok": 24, "ts": 1794385881.56, "trial": "+tool_guards|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 747, "out_tok": 70, "ts": 1794385881.57, "trial": "+tool_guards|main|P01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 146, "out_tok": 20, "ts": 1794385881.61, "trial": "+tool_guards|heldout|HE01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1440, "out_tok": 25, "ts": 1794385881.61, "trial": "+tool_guards|heldout|HE01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1662, "out_tok": 36, "ts": 1794385881.62, "trial": "+tool_guards|heldout|HE01|0", "model": "gemini-3.5-flash-lite"}
+{"cache": "hit", "in_tok": 1829, "out_tok": 42, "ts": 1794385881.62, "trial": "+tool_guards|heldout|HE01|0", "model": "gemini-3.5-flash-lite"}

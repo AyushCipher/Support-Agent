@@ -1,0 +1,88 @@
+[
+  {
+    "id": "M01",
+    "category": "clarification",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I want a refund.",
+      "facts": {
+        "order_id": "ORD-1001"
+      },
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    }
+  },
+  {
+    "id": "M02",
+    "category": "clarification",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund please.",
+      "facts": {
+        "order_id": "ORD-2003"
+      },
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-2003",
+          "amount_cents": 2000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$20\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    }
+  }
+]

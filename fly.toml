@@ -1,0 +1,46 @@
+# Fly.io app config. NOT deployed by this repo: see docs/deploy.md for the exact steps.
+# Secrets are set with `fly secrets set` (encrypted by Fly, injected as env vars at runtime), never in this file.
+app = "supportagent-CHANGE-ME"       # placeholder: must be globally unique (fly apps create <name>)
+primary_region = "CHANGE-ME"          # placeholder: e.g. the region closest to your users (fly platform regions)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  SA_ENV = "production"               # startup refuses any insecure config (security/prodcheck.py)
+  SA_BACKEND = "gemini"
+  SA_CONFIG = "full"
+  SA_MODEL_FAST = "gemini-3.5-flash-lite"
+  SA_MODEL_STRONG = "gemini-3.5-flash"
+  SA_MODEL_VERIFIER = "gemini-3.5-flash"
+  SA_RUNS_DIR = "/app/runs"
+  PORT = "8080"
+  SA_PUBLIC_DEMO = "1"                # explicit opt-in for a demo on seeded fake customers; remove for real customers and set
+                                      # SA_CUSTOMER_OIDC_JWKS / SA_CUSTOMER_OIDC_ISSUER / SA_CUSTOMER_OIDC_AUDIENCE as secrets
+  # Secrets (fly secrets set ...): GEMINI_API_KEY, SA_VAULT_KEY, SA_SESSION_SECRET, SA_ADMIN_TOKEN
+
+[[mounts]]
+  source = "supportagent_runs"        # fly volumes create supportagent_runs --size 1
+  destination = "/app/runs"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"          # paused runs wait for human approval; keep the single machine up
+  auto_start_machines = true
+  min_machines_running = 1
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 20
+    hard_limit = 40
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/healthz"
+    interval = "30s"
+    timeout = "3s"
+    grace_period = "20s"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

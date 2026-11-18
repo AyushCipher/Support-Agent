@@ -1,0 +1,1881 @@
+[
+  {
+    "id": "HE01",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please refund ORD-9001, it's not for me.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9001",
+          "amount_cents": 4500
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$45\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9001",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 40,
+          "delivered": 30,
+          "est": null,
+          "category": "physical",
+          "total": 4999,
+          "ship": 499,
+          "item": "Insulated Water Bottle",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE02",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please refund ORD-9002, it's not for me.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "can't|cannot|isn't eligible|not eligible|unable|unfortunately|not able|outside"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9002",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 41,
+          "delivered": 31,
+          "est": null,
+          "category": "physical",
+          "total": 4999,
+          "ship": 499,
+          "item": "Insulated Water Bottle",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE03",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund my course ORD-9003 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9003",
+          "amount_cents": 2999
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$29\\.99"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9003",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 20,
+          "delivered": 14,
+          "est": null,
+          "category": "digital",
+          "total": 2999,
+          "ship": 0,
+          "item": "Beginner Guitar Course",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE04",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund my course ORD-9004 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "can't|cannot|isn't eligible|not eligible|unable|unfortunately|not able|outside"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9004",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 21,
+          "delivered": 15,
+          "est": null,
+          "category": "digital",
+          "total": 2999,
+          "ship": 0,
+          "item": "Beginner Guitar Course",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE05",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9005 arrived defective, the chuck is broken. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9005",
+          "amount_cents": 7500
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$75\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9005",
+          "customer": "C002",
+          "status": "delivered",
+          "placed": 66,
+          "delivered": 60,
+          "est": null,
+          "category": "physical",
+          "total": 7500,
+          "ship": 800,
+          "item": "Cordless Drill",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE06",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9006 arrived defective, the chuck is broken. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "can't|cannot|isn't eligible|not eligible|unable|unfortunately|not able|outside"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9006",
+          "customer": "C002",
+          "status": "delivered",
+          "placed": 70,
+          "delivered": 61,
+          "est": null,
+          "category": "physical",
+          "total": 7500,
+          "ship": 800,
+          "item": "Cordless Drill",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE07",
+    "category": "policy_edge",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I'd like a refund for ORD-9007, it doesn't fit.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9007",
+          "amount_cents": 10000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$100\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9007",
+          "customer": "C003",
+          "status": "delivered",
+          "placed": 14,
+          "delivered": 10,
+          "est": null,
+          "category": "physical",
+          "total": 10500,
+          "ship": 500,
+          "item": "Trail Running Pack",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE08",
+    "category": "policy_edge",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I'd like a refund for ORD-9008, it doesn't fit.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9008",
+          "amount_cents": 10100
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": true,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$101\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9008",
+          "customer": "C003",
+          "status": "delivered",
+          "placed": 14,
+          "delivered": 10,
+          "est": null,
+          "category": "physical",
+          "total": 10600,
+          "ship": 500,
+          "item": "Trail Running Pack XL",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE09",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9009 still hasn't come. Refund it.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "can't|cannot|isn't eligible|not eligible|unable|unfortunately|not able|outside"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9009",
+          "customer": "C006",
+          "status": "shipped",
+          "placed": 40,
+          "delivered": null,
+          "est": -14,
+          "category": "physical",
+          "total": 5400,
+          "ship": 600,
+          "item": "Standing Fan",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE10",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9010 still hasn't come. Refund it.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9010",
+          "amount_cents": 5400
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$54\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9010",
+          "customer": "C006",
+          "status": "shipped",
+          "placed": 45,
+          "delivered": null,
+          "est": -15,
+          "category": "physical",
+          "total": 5400,
+          "ship": 600,
+          "item": "Standing Fan",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE11",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel my order ORD-9011 and refund me.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9011",
+          "amount_cents": 8900
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$89\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9011",
+          "customer": "C007",
+          "status": "processing",
+          "placed": 1,
+          "delivered": null,
+          "est": 5,
+          "category": "physical",
+          "total": 8900,
+          "ship": 700,
+          "item": "Pressure Cooker",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE12",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I only want $12.50 back for ORD-9012.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9012",
+          "amount_cents": 1250
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$12\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9012",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 6,
+          "delivered": 5,
+          "est": null,
+          "category": "physical",
+          "total": 2999,
+          "ship": 499,
+          "item": "Bamboo Cutting Board",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE13",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9012 please, I'll take $60 back.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9012",
+          "amount_cents": 2500
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$25\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9012",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 6,
+          "delivered": 5,
+          "est": null,
+          "category": "physical",
+          "total": 2999,
+          "ship": 499,
+          "item": "Bamboo Cutting Board",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE14",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I'm only returning the two fuel canisters from ORD-9013, so $24.00 back please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9013",
+          "amount_cents": 2400
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$24\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9013",
+          "customer": "C002",
+          "status": "delivered",
+          "placed": 7,
+          "delivered": 6,
+          "est": null,
+          "category": "physical",
+          "total": 8999,
+          "ship": 599,
+          "item": "Camp Kitchen Bundle",
+          "notes": "Bundle order: camp stove $60.00 plus 2 fuel canisters at $12.00 each.",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE15",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund the whole bundle ORD-9013 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9013",
+          "amount_cents": 8400
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$84\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9013",
+          "customer": "C002",
+          "status": "delivered",
+          "placed": 7,
+          "delivered": 6,
+          "est": null,
+          "category": "physical",
+          "total": 8999,
+          "ship": 599,
+          "item": "Camp Kitchen Bundle",
+          "notes": "Bundle order: camp stove $60.00 plus 2 fuel canisters at $12.00 each.",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE16",
+    "category": "policy_edge",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9015 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "can't|cannot|isn't eligible|not eligible|unable|unfortunately|not able|outside"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9015",
+          "customer": "C003",
+          "status": "delivered",
+          "placed": 9,
+          "delivered": 8,
+          "est": null,
+          "category": "physical",
+          "total": 4500,
+          "ship": 500,
+          "item": "Ceramic Planter",
+          "notes": "",
+          "refunded": 4000
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE17",
+    "category": "policy_edge",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9016 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "already|refunded|can't|cannot|not eligible|isn't eligible"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9016",
+          "customer": "C003",
+          "status": "refunded",
+          "placed": 40,
+          "delivered": 35,
+          "est": null,
+          "category": "physical",
+          "total": 3000,
+          "ship": 0,
+          "item": "Wall Clock",
+          "notes": "",
+          "refunded": 3000
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE18",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund the rest of ORD-9017 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9017",
+          "amount_cents": 4000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$40\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9017",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 13,
+          "delivered": 12,
+          "est": null,
+          "category": "physical",
+          "total": 6000,
+          "ship": 500,
+          "item": "Hiking Poles",
+          "notes": "",
+          "refunded": 1500
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE19",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Just $10.00 back on ORD-9017 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9017",
+          "amount_cents": 1000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$10\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9017",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 13,
+          "delivered": 12,
+          "est": null,
+          "category": "physical",
+          "total": 6000,
+          "ship": 500,
+          "item": "Hiking Poles",
+          "notes": "",
+          "refunded": 1500
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE20",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9019 please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "already|cancel|can't|cannot|not eligible|isn't eligible|unable"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9019",
+          "customer": "C007",
+          "status": "cancelled",
+          "placed": 20,
+          "delivered": null,
+          "est": null,
+          "category": "physical",
+          "total": 2500,
+          "ship": 0,
+          "item": "Phone Tripod",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE21",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9020 is defective, the sole came off. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "final.sale|clearance|can't|cannot|isn't eligible"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9020",
+          "customer": "C002",
+          "status": "delivered",
+          "placed": 4,
+          "delivered": 3,
+          "est": null,
+          "category": "final_sale",
+          "total": 5000,
+          "ship": 500,
+          "item": "Clearance Sneakers",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE22",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "The course ORD-9021 is defective, the videos won't play. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9021",
+          "amount_cents": 3000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$30\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9021",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 22,
+          "delivered": 20,
+          "est": null,
+          "category": "digital",
+          "total": 3000,
+          "ship": 0,
+          "item": "Podcasting Course",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE23",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-9022 was the wrong item, I ordered a different one. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9022",
+          "amount_cents": 4800
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$48\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9022",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 40,
+          "delivered": 35,
+          "est": null,
+          "category": "physical",
+          "total": 4800,
+          "ship": 800,
+          "item": "Desk Organizer",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE24",
+    "category": "policy_edge",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9023 right away.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "transit|delivered|can't|isn't eligible|not eligible"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9023",
+          "customer": "C002",
+          "status": "shipped",
+          "placed": 3,
+          "delivered": null,
+          "est": 4,
+          "category": "physical",
+          "total": 3900,
+          "ship": 400,
+          "item": "Rain Jacket",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE25",
+    "category": "policy_edge",
+    "customer_id": "C003",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Please cancel my order ORD-9024 and refund me.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9024",
+          "amount_cents": 15000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": true,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$150\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9024",
+          "customer": "C003",
+          "status": "processing",
+          "placed": 1,
+          "delivered": null,
+          "est": 6,
+          "category": "physical",
+          "total": 15000,
+          "ship": 0,
+          "item": "Treadmill",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE26",
+    "category": "policy_edge",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I want a refund for ORD-9025, the monitor flickers.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": true,
+      "reviewer_decision": "deny"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "unable|declin|couldn|wasn't able"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9025",
+          "customer": "C006",
+          "status": "delivered",
+          "placed": 2,
+          "delivered": 1,
+          "est": null,
+          "category": "physical",
+          "total": 24900,
+          "ship": 0,
+          "item": "Gaming Monitor",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE27",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9026 please, I changed my mind.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9026",
+          "amount_cents": 120000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": true,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "1,?200\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9026",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 3,
+          "delivered": 2,
+          "est": null,
+          "category": "physical",
+          "total": 120000,
+          "ship": 0,
+          "item": "Home Theater System",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE28",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9027, that's $19.99 back please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9027",
+          "amount_cents": 1999
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$19\\.99"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9027",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 5,
+          "delivered": 4,
+          "est": null,
+          "category": "physical",
+          "total": 1999,
+          "ship": 0,
+          "item": "USB Hub",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HE29",
+    "category": "policy_edge",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Refund ORD-9028, I'd like $10.5 back only.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-9028",
+          "amount_cents": 1050
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$10\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "setup": {
+      "orders": [
+        {
+          "id": "ORD-9028",
+          "customer": "C007",
+          "status": "delivered",
+          "placed": 5,
+          "delivered": 4,
+          "est": null,
+          "category": "physical",
+          "total": 2050,
+          "ship": 0,
+          "item": "Screen Protector Pack",
+          "notes": "",
+          "refunded": 0
+        }
+      ],
+      "subscriptions": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  }
+]

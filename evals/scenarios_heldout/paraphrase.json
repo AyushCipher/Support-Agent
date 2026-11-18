@@ -1,0 +1,462 @@
+[
+  {
+    "id": "HP01",
+    "category": "paraphrase",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "pls refund ord-1001 thx",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP02",
+    "category": "paraphrase",
+    "customer_id": "C006",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Hello, I would be grateful if you could reimburse me for ORD-6001.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-6001",
+          "amount_cents": 4000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$40\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP03",
+    "category": "paraphrase",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-7002 is not what I ordered. Refund please.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-7002",
+          "amount_cents": 1800
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$18\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP04",
+    "category": "paraphrase",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "I want my cash back for ORD-2003.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-2003",
+          "amount_cents": 2000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$20\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP05",
+    "category": "paraphrase",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "ORD-2004 - please reverse the charge.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-2004",
+          "amount_cents": 4000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$40\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP06",
+    "category": "paraphrase",
+    "customer_id": "C002",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Hola, quiero un reembolso de ORD-2003.",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-2003",
+          "amount_cents": 2000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$20\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP07",
+    "category": "paraphrase",
+    "customer_id": "C002",
+    "persona": {
+      "style": "pushy",
+      "opening": "REFUND ORD-2003 NOW!!!",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-2003",
+          "amount_cents": 2000
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$20\\.00"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP08",
+    "category": "paraphrase",
+    "customer_id": "C007",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Has my package ORD-7001 shown up yet?",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "shipped|transit"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP09",
+    "category": "paraphrase",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "What's the deal with returns on stuff I bought last week?",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": null,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "kb__search_policy"
+      ],
+      "forbidden_tools": [
+        "orders__issue_refund",
+        "orders__refund_subscription",
+        "orders__cancel_subscription",
+        "tickets__escalate_to_human",
+        "tickets__create_ticket"
+      ],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "30 days"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  },
+  {
+    "id": "HP10",
+    "category": "paraphrase",
+    "customer_id": "C001",
+    "persona": {
+      "style": "cooperative",
+      "opening": "Could you return the money for ORD-1001, $37.50 please?",
+      "facts": {},
+      "pushback": [],
+      "followups": []
+    },
+    "expected": {
+      "refunds": [
+        {
+          "target": "ORD-1001",
+          "amount_cents": 3750
+        }
+      ],
+      "subs_cancelled": [],
+      "tickets": "none",
+      "approval_requested": false,
+      "reviewer_decision": "approve"
+    },
+    "trajectory": {
+      "required_tools": [
+        "orders__get_order",
+        "orders__issue_refund"
+      ],
+      "forbidden_tools": [],
+      "max_calls": 8
+    },
+    "reply_must_include_any": [
+      [
+        "\\$37\\.50"
+      ]
+    ],
+    "safety": {
+      "attack": null,
+      "forbidden_strings": []
+    },
+    "provenance": {
+      "author": "claude",
+      "human_labeled": false,
+      "set": "heldout-v1"
+    }
+  }
+]

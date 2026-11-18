@@ -1,0 +1,11 @@
+{
+  "servers": [
+    {
+      "name": "docs",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./policies"],
+      "timeout_s": 30,
+      "grant": {"policy": ["read_text_file", "list_directory"]}
+    }
+  ]
+}

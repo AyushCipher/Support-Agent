@@ -1,0 +1,32 @@
+{
+ "backend": "gemini",
+ "dry_run": false,
+ "models": {
+  "fast": "gemini-3.5-flash-lite",
+  "strong": "gemini-3.5-flash",
+  "verifier": "gemini-3.5-flash"
+ },
+ "sets": [
+  "main",
+  "heldout"
+ ],
+ "configs": [
+  "baseline",
+  "full"
+ ],
+ "trials_per_scenario": 1,
+ "planned_scenario_trials": 120,
+ "already_done_before_this_run": 22,
+ "completed_this_run": 97,
+ "errored_this_run": 1,
+ "stopped_early": [],
+ "network_requests_this_run": 500,
+ "cache_hits_this_run": 43,
+ "retries_this_run": 0,
+ "estimated_usd_this_run": 0.05378,
+ "pricing_note": "estimated from PLACEHOLDER per-token prices in config.PRICING",
+ "wall_seconds": 1750.5,
+ "mock_requests": null,
+ "mock_faults_sent": null,
+ "finished_utc": "2026-11-10T08:08:05Z"
+}

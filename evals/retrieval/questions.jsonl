@@ -1,0 +1,169 @@
+{"id": "q001", "question": "How much does express shipping cost?", "gold": ["shipping_policy#shipping-methods-and-rates"], "category": "direct"}
+{"id": "q002", "question": "What is the warranty period for electronics?", "gold": ["warranty_policy#warranty-coverage"], "category": "direct"}
+{"id": "q003", "question": "How do I file a warranty claim?", "gold": ["warranty_policy#filing-a-warranty-claim"], "category": "direct"}
+{"id": "q004", "question": "How do I request a copy of my personal data?", "gold": ["privacy_requests_policy#data-access-requests"], "category": "direct"}
+{"id": "q005", "question": "How do I unsubscribe from marketing emails?", "gold": ["privacy_requests_policy#marketing-opt-out"], "category": "direct"}
+{"id": "q006", "question": "What payment methods do you accept?", "gold": ["billing_and_payments_policy#accepted-payment-methods"], "category": "direct"}
+{"id": "q007", "question": "Do gift cards expire?", "gold": ["billing_and_payments_policy#gift-cards-and-store-credit"], "category": "direct"}
+{"id": "q008", "question": "Can I use two promo codes on one order?", "gold": ["billing_and_payments_policy#promo-codes"], "category": "direct"}
+{"id": "q009", "question": "What happens to a chargeback if I already got a refund?", "gold": ["fraud_and_chargebacks_policy#chargebacks"], "category": "direct"}
+{"id": "q010", "question": "How long do you hold a flagged order for fraud review?", "gold": ["fraud_and_chargebacks_policy#suspected-fraudulent-orders"], "category": "direct"}
+{"id": "q011", "question": "What are your support hours?", "gold": ["customer_service_standards#support-hours"], "category": "direct"}
+{"id": "q012", "question": "How quickly are email messages answered?", "gold": ["customer_service_standards#response-times"], "category": "direct"}
+{"id": "q013", "question": "Can I change the delivery address after my order ships?", "gold": ["shipping_policy#address-changes"], "category": "direct"}
+{"id": "q014", "question": "Who pays customs duties on international orders?", "gold": ["shipping_policy#international-shipping"], "category": "direct"}
+{"id": "q015", "question": "Do orders over 200 dollars need a signature?", "gold": ["shipping_policy#signature-requirements"], "category": "direct"}
+{"id": "q016", "question": "What is the cutoff time for same day order processing?", "gold": ["shipping_policy#processing-time"], "category": "direct"}
+{"id": "q017", "question": "How long does the carrier hold a parcel at the depot?", "gold": ["shipping_policy#failed-delivery-attempts"], "category": "direct"}
+{"id": "q018", "question": "What does the warranty not cover?", "gold": ["warranty_policy#warranty-exclusions"], "category": "direct"}
+{"id": "q019", "question": "Can I buy an extended protection plan?", "gold": ["warranty_policy#extended-protection-plans"], "category": "direct"}
+{"id": "q020", "question": "How long are support chat transcripts kept?", "gold": ["privacy_requests_policy#data-retention"], "category": "direct"}
+{"id": "q021", "question": "Can I request a VAT invoice?", "gold": ["billing_and_payments_policy#invoices-and-receipts"], "category": "direct"}
+{"id": "q022", "question": "What is the price adjustment window?", "gold": ["billing_and_payments_policy#price-adjustments"], "category": "direct"}
+{"id": "q023", "question": "How many times is a failed subscription payment retried?", "gold": ["billing_and_payments_policy#failed-subscription-payments"], "category": "direct"}
+{"id": "q024", "question": "Which languages does support speak?", "gold": ["customer_service_standards#language-support"], "category": "direct"}
+{"id": "q025", "question": "How can I reject advertising cookies?", "gold": ["privacy_requests_policy#cookie-preferences"], "category": "direct"}
+{"id": "q026", "question": "How do I cancel my subscription?", "gold": ["subscription_policy#cancellation"], "category": "direct"}
+{"id": "q027", "question": "What's the fastest way to get an order delivered and what does it cost?", "gold": ["shipping_policy#shipping-methods-and-rates"], "category": "paraphrase"}
+{"id": "q028", "question": "Is there a minimum spend to avoid paying for delivery?", "gold": ["shipping_policy#shipping-methods-and-rates"], "category": "paraphrase"}
+{"id": "q029", "question": "When will my parcel leave the warehouse if I order in the evening?", "gold": ["shipping_policy#processing-time"], "category": "paraphrase"}
+{"id": "q030", "question": "Where do I find the tracking number for my order?", "gold": ["shipping_policy#order-tracking"], "category": "paraphrase"}
+{"id": "q031", "question": "The tracking site has not updated for a day, is something wrong?", "gold": ["shipping_policy#order-tracking"], "category": "paraphrase"}
+{"id": "q032", "question": "I entered the wrong street on my order, can it be fixed?", "gold": ["shipping_policy#address-changes"], "category": "paraphrase"}
+{"id": "q033", "question": "Can you send orders to Germany?", "gold": ["shipping_policy#international-shipping"], "category": "paraphrase"}
+{"id": "q034", "question": "How many days does an order to Canada take?", "gold": ["shipping_policy#international-shipping"], "category": "paraphrase"}
+{"id": "q035", "question": "The courier tried to deliver while I was out. What now?", "gold": ["shipping_policy#failed-delivery-attempts"], "category": "paraphrase"}
+{"id": "q036", "question": "What happens to a parcel nobody collects from the depot?", "gold": ["shipping_policy#failed-delivery-attempts"], "category": "paraphrase"}
+{"id": "q037", "question": "Will I be compensated if a storm slows my delivery down?", "gold": ["shipping_policy#carrier-delays"], "category": "paraphrase"}
+{"id": "q038", "question": "How does the one year guarantee on my laptop work?", "gold": ["warranty_policy#warranty-coverage"], "category": "paraphrase"}
+{"id": "q039", "question": "My blender stopped working after 8 months, is that covered?", "gold": ["warranty_policy#warranty-coverage"], "category": "paraphrase"}
+{"id": "q040", "question": "Will you fix my phone if I dropped it in a pool?", "gold": ["warranty_policy#warranty-exclusions"], "category": "paraphrase"}
+{"id": "q041", "question": "What do I need to send you to prove my device is faulty?", "gold": ["warranty_policy#filing-a-warranty-claim"], "category": "paraphrase"}
+{"id": "q042", "question": "Do I get my money back or a new item if my appliance fails under warranty?", "gold": ["warranty_policy#repair-or-replacement"], "category": "paraphrase"}
+{"id": "q043", "question": "How long does a repair take?", "gold": ["warranty_policy#repair-or-replacement"], "category": "paraphrase"}
+{"id": "q044", "question": "Can I extend my guarantee to three years?", "gold": ["warranty_policy#extended-protection-plans"], "category": "paraphrase"}
+{"id": "q045", "question": "I lost my receipt, how can I prove I bought it?", "gold": ["warranty_policy#proof-of-purchase"], "category": "paraphrase"}
+{"id": "q046", "question": "Can I delete my account and everything you know about me?", "gold": ["privacy_requests_policy#data-deletion-requests"], "category": "paraphrase"}
+{"id": "q047", "question": "Why can you not delete my invoices when I asked for data erasure?", "gold": ["privacy_requests_policy#data-deletion-requests"], "category": "paraphrase"}
+{"id": "q048", "question": "How do you check it is really me asking for my data?", "gold": ["privacy_requests_policy#identity-verification"], "category": "paraphrase"}
+{"id": "q049", "question": "Do you keep my credit card number?", "gold": ["privacy_requests_policy#data-retention"], "category": "paraphrase"}
+{"id": "q050", "question": "I keep receiving promotional emails, make them stop.", "gold": ["privacy_requests_policy#marketing-opt-out"], "category": "paraphrase"}
+{"id": "q051", "question": "My bank is investigating a dispute I opened. Will you also refund me?", "gold": ["fraud_and_chargebacks_policy#chargebacks"], "category": "paraphrase"}
+{"id": "q052", "question": "My order is under review by your risk team, how long will it take?", "gold": ["fraud_and_chargebacks_policy#suspected-fraudulent-orders"], "category": "paraphrase"}
+{"id": "q053", "question": "There is a payment on my statement that I never made.", "gold": ["fraud_and_chargebacks_policy#unauthorized-charges"], "category": "paraphrase"}
+{"id": "q054", "question": "Someone changed my password and added an address I do not know.", "gold": ["fraud_and_chargebacks_policy#account-takeover"], "category": "paraphrase"}
+{"id": "q055", "question": "I got billed two times for one purchase.", "gold": ["fraud_and_chargebacks_policy#duplicate-charges"], "category": "paraphrase"}
+{"id": "q056", "question": "Can I pay with Bitcoin?", "gold": ["billing_and_payments_policy#accepted-payment-methods"], "category": "paraphrase"}
+{"id": "q057", "question": "Can I turn my gift card balance into cash?", "gold": ["billing_and_payments_policy#gift-cards-and-store-credit"], "category": "paraphrase"}
+{"id": "q058", "question": "Can I add a discount code after checkout?", "gold": ["billing_and_payments_policy#promo-codes"], "category": "paraphrase"}
+{"id": "q059", "question": "An item went on sale last week after I bought it, can I get the difference?", "gold": ["billing_and_payments_policy#price-adjustments"], "category": "paraphrase"}
+{"id": "q060", "question": "How is the tax on my order worked out?", "gold": ["billing_and_payments_policy#sales-tax"], "category": "paraphrase"}
+{"id": "q061", "question": "My card was declined on renewal day, what happens to my account?", "gold": ["billing_and_payments_policy#failed-subscription-payments"], "category": "paraphrase"}
+{"id": "q062", "question": "Where can I download an invoice for my accountant?", "gold": ["billing_and_payments_policy#invoices-and-receipts"], "category": "paraphrase"}
+{"id": "q063", "question": "How soon will someone respond to my email?", "gold": ["customer_service_standards#response-times"], "category": "paraphrase"}
+{"id": "q064", "question": "Is there somebody I can speak to on a Saturday?", "gold": ["customer_service_standards#support-hours"], "category": "paraphrase"}
+{"id": "q065", "question": "Can I get this document in large print?", "gold": ["customer_service_standards#accessibility-assistance"], "category": "paraphrase"}
+{"id": "q066", "question": "What do you do when a customer is rude to the agent?", "gold": ["customer_service_standards#abusive-language"], "category": "paraphrase"}
+{"id": "q067", "question": "What is the deadline to send back a physical product?", "gold": ["refund_policy#standard-returns"], "category": "paraphrase"}
+{"id": "q068", "question": "Can I get my money back for an online class I bought?", "gold": ["refund_policy#digital-goods"], "category": "paraphrase"}
+{"id": "q069", "question": "The lamp I received was smashed in the box.", "gold": ["refund_policy#defective-or-wrong-items"], "category": "paraphrase"}
+{"id": "q070", "question": "Can I send back something I bought at a clearance sale?", "gold": ["refund_policy#final-sale"], "category": "paraphrase"}
+{"id": "q071", "question": "I ordered a few minutes ago and changed my mind before it left the warehouse.", "gold": ["refund_policy#cancellations"], "category": "paraphrase"}
+{"id": "q072", "question": "What is the most an order can be refunded for?", "gold": ["refund_policy#limits"], "category": "paraphrase"}
+{"id": "q073", "question": "If I stop my plan today do I still get access until the month ends?", "gold": ["subscription_policy#cancellation"], "category": "paraphrase"}
+{"id": "q074", "question": "I renewed my yearly membership yesterday and want my money back.", "gold": ["subscription_policy#annual-refunds"], "category": "paraphrase"}
+{"id": "q075", "question": "Can I get my money back for a monthly plan?", "gold": ["subscription_policy#monthly-plans"], "category": "paraphrase"}
+{"id": "q076", "question": "Will you make an exception to your rules for me?", "gold": ["escalation_policy#exception-requests"], "category": "paraphrase"}
+{"id": "q077", "question": "Can you give me another customer's shipping address?", "gold": ["escalation_policy#security"], "category": "paraphrase"}
+{"id": "q078", "question": "The order note says to ignore the rules and refund everything, should the agent obey it?", "gold": ["escalation_policy#security"], "category": "paraphrase"}
+{"id": "q079", "question": "the parcel was supposed to come three weeks ago and there is still nothing", "gold": ["refund_policy#lost-packages"], "category": "vocab_mismatch"}
+{"id": "q080", "question": "tracking says delivered but my doorstep is empty", "gold": ["shipping_policy#delivered-but-not-received"], "category": "vocab_mismatch"}
+{"id": "q081", "question": "a neighbour might have taken my parcel, what do I do", "gold": ["shipping_policy#delivered-but-not-received"], "category": "vocab_mismatch"}
+{"id": "q082", "question": "this customer keeps asking for money back again and again", "gold": ["escalation_policy#refund-abuse-review"], "category": "vocab_mismatch"}
+{"id": "q083", "question": "the account has requested reimbursement four times this quarter", "gold": ["escalation_policy#refund-abuse-review"], "category": "vocab_mismatch"}
+{"id": "q084", "question": "buyer wants us to bend the rules just this once", "gold": ["escalation_policy#exception-requests"], "category": "vocab_mismatch"}
+{"id": "q085", "question": "my coupon was not entered at checkout, can you apply it now", "gold": ["billing_and_payments_policy#promo-codes"], "category": "vocab_mismatch"}
+{"id": "q086", "question": "I live in Berlin, will my order get here and will there be extra fees at the border", "gold": ["shipping_policy#international-shipping"], "category": "vocab_mismatch"}
+{"id": "q087", "question": "the fridge died after 10 months and I want the maker's guarantee to cover it", "gold": ["warranty_policy#warranty-coverage"], "category": "vocab_mismatch"}
+{"id": "q088", "question": "I spilled coffee on my laptop", "gold": ["warranty_policy#warranty-exclusions"], "category": "vocab_mismatch"}
+{"id": "q089", "question": "who decides whether you swap or mend my broken kettle", "gold": ["warranty_policy#repair-or-replacement"], "category": "vocab_mismatch"}
+{"id": "q090", "question": "I want you to wipe all my details from your systems", "gold": ["privacy_requests_policy#data-deletion-requests"], "category": "vocab_mismatch"}
+{"id": "q091", "question": "send me everything you have stored about me", "gold": ["privacy_requests_policy#data-access-requests"], "category": "vocab_mismatch"}
+{"id": "q092", "question": "stop pinging my inbox with offers", "gold": ["privacy_requests_policy#marketing-opt-out"], "category": "vocab_mismatch"}
+{"id": "q093", "question": "a stranger is using my login", "gold": ["fraud_and_chargebacks_policy#account-takeover"], "category": "vocab_mismatch"}
+{"id": "q094", "question": "I am calling my solicitor tomorrow", "gold": ["customer_service_standards#legal-threats-and-media"], "category": "vocab_mismatch"}
+{"id": "q095", "question": "I am a journalist working on a story about your company", "gold": ["customer_service_standards#legal-threats-and-media"], "category": "vocab_mismatch"}
+{"id": "q096", "question": "I cannot read small print, are there other formats", "gold": ["customer_service_standards#accessibility-assistance"], "category": "vocab_mismatch"}
+{"id": "q097", "question": "my payment for the membership bounced", "gold": ["billing_and_payments_policy#failed-subscription-payments"], "category": "vocab_mismatch"}
+{"id": "q098", "question": "can I get a human on the weekend", "gold": ["customer_service_standards#support-hours"], "category": "vocab_mismatch"}
+{"id": "q099", "question": "will the drop in price after I bought come back to me as cash", "gold": ["billing_and_payments_policy#price-adjustments"], "category": "vocab_mismatch"}
+{"id": "q100", "question": "my parcel was left at a depot and I have not collected it", "gold": ["shipping_policy#failed-delivery-attempts"], "category": "vocab_mismatch"}
+{"id": "q101", "question": "can I get my annual membership money back after three weeks", "gold": ["subscription_policy#annual-refunds"], "category": "vocab_mismatch"}
+{"id": "q102", "question": "I want to stop paying for my plan but keep using it until it runs out", "gold": ["subscription_policy#cancellation"], "category": "vocab_mismatch"}
+{"id": "q103", "question": "the cardholder agreement lets me dispute with my issuer, will that void my refund", "gold": ["fraud_and_chargebacks_policy#chargebacks"], "category": "vocab_mismatch"}
+{"id": "q104", "question": "an order I placed got held and then cancelled, will I be charged", "gold": ["fraud_and_chargebacks_policy#suspected-fraudulent-orders"], "category": "vocab_mismatch"}
+{"id": "q105", "question": "I spotted a debit I do not recognise", "gold": ["fraud_and_chargebacks_policy#unauthorized-charges"], "category": "vocab_mismatch"}
+{"id": "q106", "question": "how do I cancle my subcription", "gold": ["subscription_policy#cancellation"], "category": "typo"}
+{"id": "q107", "question": "wat is the refnd window for digital corses", "gold": ["refund_policy#digital-goods"], "category": "typo"}
+{"id": "q108", "question": "my itme arived broaken", "gold": ["refund_policy#defective-or-wrong-items"], "category": "typo"}
+{"id": "q109", "question": "can i chnage my delivry adress", "gold": ["shipping_policy#address-changes"], "category": "typo"}
+{"id": "q110", "question": "how much is expres shiping", "gold": ["shipping_policy#shipping-methods-and-rates"], "category": "typo"}
+{"id": "q111", "question": "do you ship to the Untied Kingdom", "gold": ["shipping_policy#international-shipping"], "category": "typo"}
+{"id": "q112", "question": "does the warrenty cover water damge", "gold": ["warranty_policy#warranty-exclusions"], "category": "typo"}
+{"id": "q113", "question": "how do I delte my acount and data", "gold": ["privacy_requests_policy#data-deletion-requests"], "category": "typo"}
+{"id": "q114", "question": "unsubscibe from newsleters", "gold": ["privacy_requests_policy#marketing-opt-out"], "category": "typo"}
+{"id": "q115", "question": "chargback while refund pending", "gold": ["fraud_and_chargebacks_policy#chargebacks"], "category": "typo"}
+{"id": "q116", "question": "i was charged twise", "gold": ["fraud_and_chargebacks_policy#duplicate-charges"], "category": "typo"}
+{"id": "q117", "question": "do gift crads expire", "gold": ["billing_and_payments_policy#gift-cards-and-store-credit"], "category": "typo"}
+{"id": "q118", "question": "wat paymnt methods do you acept", "gold": ["billing_and_payments_policy#accepted-payment-methods"], "category": "typo"}
+{"id": "q119", "question": "how is slaes tax calcuated", "gold": ["billing_and_payments_policy#sales-tax"], "category": "typo"}
+{"id": "q120", "question": "wheres my invoce", "gold": ["billing_and_payments_policy#invoices-and-receipts"], "category": "typo"}
+{"id": "q121", "question": "cutomer support hours", "gold": ["customer_service_standards#support-hours"], "category": "typo"}
+{"id": "q122", "question": "i need a signiture for my parcel", "gold": ["shipping_policy#signature-requirements"], "category": "typo"}
+{"id": "q123", "question": "pakage was lost refnd please", "gold": ["refund_policy#lost-packages"], "category": "typo"}
+{"id": "q124", "question": "anual plan refud window", "gold": ["subscription_policy#annual-refunds"], "category": "typo"}
+{"id": "q125", "question": "clearence item return", "gold": ["refund_policy#final-sale"], "category": "typo"}
+{"id": "q126", "question": "somone hacked my acount", "gold": ["fraud_and_chargebacks_policy#account-takeover"], "category": "typo"}
+{"id": "q127", "question": "can I get a refund for a monthy plan", "gold": ["subscription_policy#monthly-plans"], "category": "typo"}
+{"id": "q128", "question": "My laptop arrived broken, should I use the warranty or ask for a refund?", "gold": ["refund_policy#defective-or-wrong-items", "warranty_policy#warranty-overlap-with-other-windows"], "category": "multi_section"}
+{"id": "q129", "question": "Can I cancel my annual subscription and get a refund 10 days after renewal?", "gold": ["subscription_policy#annual-refunds", "subscription_policy#cancellation"], "category": "multi_section"}
+{"id": "q130", "question": "Tracking says delivered but I got nothing, can I get a refund?", "gold": ["shipping_policy#delivered-but-not-received", "refund_policy#lost-packages"], "category": "multi_section"}
+{"id": "q131", "question": "I want my data deleted but I still have an active subscription", "gold": ["privacy_requests_policy#data-deletion-requests", "subscription_policy#cancellation"], "category": "multi_section"}
+{"id": "q132", "question": "Someone used my card for an order and my bank opened a dispute, who pays?", "gold": ["fraud_and_chargebacks_policy#unauthorized-charges", "fraud_and_chargebacks_policy#chargebacks"], "category": "multi_section"}
+{"id": "q133", "question": "My account was hacked and charges appeared that I did not make", "gold": ["fraud_and_chargebacks_policy#account-takeover", "fraud_and_chargebacks_policy#unauthorized-charges"], "category": "multi_section"}
+{"id": "q134", "question": "I was double charged on a digital course and want to be refunded", "gold": ["fraud_and_chargebacks_policy#duplicate-charges", "refund_policy#digital-goods"], "category": "multi_section"}
+{"id": "q135", "question": "Can I get a price adjustment on a clearance item and how is it paid?", "gold": ["billing_and_payments_policy#price-adjustments", "refund_policy#final-sale"], "category": "multi_section"}
+{"id": "q136", "question": "My international parcel never turned up, do I get my customs fees and shipping back?", "gold": ["shipping_policy#international-shipping", "refund_policy#lost-packages"], "category": "multi_section"}
+{"id": "q137", "question": "A customer threatens legal action and wants a refund exception", "gold": ["customer_service_standards#legal-threats-and-media", "escalation_policy#exception-requests"], "category": "multi_section"}
+{"id": "q138", "question": "A refund request above 100 dollars from an account with several recent refunds", "gold": ["refund_policy#limits", "escalation_policy#refund-abuse-review"], "category": "multi_section"}
+{"id": "q139", "question": "I need a warranty repair but I lost my receipt", "gold": ["warranty_policy#proof-of-purchase", "warranty_policy#filing-a-warranty-claim"], "category": "multi_section"}
+{"id": "q140", "question": "How do I get a copy of my data and how do you confirm it is me?", "gold": ["privacy_requests_policy#data-access-requests", "privacy_requests_policy#identity-verification"], "category": "multi_section"}
+{"id": "q141", "question": "Is tax returned on refunded items and how long do refunds take?", "gold": ["billing_and_payments_policy#sales-tax", "refund_policy#standard-returns"], "category": "multi_section"}
+{"id": "q142", "question": "When does my cancelled subscription stop, and what if my last payment failed?", "gold": ["subscription_policy#cancellation", "billing_and_payments_policy#failed-subscription-payments"], "category": "multi_section"}
+{"id": "q143", "question": "The carrier sent my parcel back after failed deliveries, what refund do I get and for how much shipping?", "gold": ["shipping_policy#failed-delivery-attempts", "refund_policy#standard-returns"], "category": "multi_section"}
+{"id": "q144", "question": "Do you price match Amazon?", "gold": [], "category": "no_answer"}
+{"id": "q145", "question": "Can I trade in my old phone for credit?", "gold": [], "category": "no_answer"}
+{"id": "q146", "question": "Do you offer student discounts?", "gold": [], "category": "no_answer"}
+{"id": "q147", "question": "Do you have a loyalty points programme?", "gold": [], "category": "no_answer"}
+{"id": "q148", "question": "Can I pick up my order from a physical store?", "gold": [], "category": "no_answer"}
+{"id": "q149", "question": "Can I get my order gift wrapped?", "gold": [], "category": "no_answer"}
+{"id": "q150", "question": "What is the weather forecast for Paris this weekend?", "gold": [], "category": "no_answer"}
+{"id": "q151", "question": "Write me a poem about the ocean.", "gold": [], "category": "no_answer"}
+{"id": "q152", "question": "Who is the CEO of your company?", "gold": [], "category": "no_answer"}
+{"id": "q153", "question": "Are you hiring software engineers?", "gold": [], "category": "no_answer"}
+{"id": "q154", "question": "Can I book a two hour delivery window?", "gold": [], "category": "no_answer"}
+{"id": "q155", "question": "What is the capital of Australia?", "gold": [], "category": "no_answer"}
+{"id": "q156", "question": "Do you install appliances after delivery?", "gold": [], "category": "no_answer"}
+{"id": "q157", "question": "Can I pre-order products that are not released yet?", "gold": [], "category": "no_answer"}
+{"id": "q158", "question": "Do you sell products wholesale to businesses?", "gold": [], "category": "no_answer"}
+{"id": "q159", "question": "What phone number can I call to reach you?", "gold": [], "category": "no_answer"}
+{"id": "q160", "question": "Is the Atlas X200 headphone in stock in black?", "gold": [], "category": "no_answer"}
+{"id": "q161", "question": "Do you donate to charity?", "gold": [], "category": "no_answer"}
+{"id": "q162", "question": "How do I recycle my old electronics?", "gold": [], "category": "no_answer"}
+{"id": "q163", "question": "Do you have a mobile app for iPhone?", "gold": [], "category": "no_answer"}
+{"id": "q164", "question": "How do I leave a product review?", "gold": [], "category": "no_answer"}
+{"id": "q165", "question": "Can you recommend a good laptop for video editing?", "gold": [], "category": "no_answer"}
+{"id": "q166", "question": "What is the meaning of life?", "gold": [], "category": "no_answer"}
+{"id": "q167", "question": "Can you give me medical advice about my headaches?", "gold": [], "category": "no_answer"}
+{"id": "q168", "question": "How do I convert a PDF to Word?", "gold": [], "category": "no_answer"}
+{"id": "q169", "question": "Which team won the football match last night?", "gold": [], "category": "no_answer"}

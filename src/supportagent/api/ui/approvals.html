@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northwind Support · Reviewer Desk</title>
+<style>
+:root{--paper:#f4efe6;--ink:#1d1b18;--mute:#6f675c;--rule:#d8cfbf;--card:#fbf8f2;--rust:#b4472a;--green:#2f6b4f;--amber:#a56a12;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--serif:ui-serif,Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--paper:#171512;--ink:#ece6da;--mute:#9a9082;--rule:#322d26;--card:#1e1b17;--rust:#e0724f;--green:#6fc29b;--amber:#e0a84a}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,sans-serif}
+header{display:flex;align-items:baseline;gap:18px;padding:18px 28px;border-bottom:2px solid var(--ink)}
+h1{font:600 22px var(--serif);margin:0}nav{margin-left:auto;font:13px var(--mono)}nav a{color:var(--ink);margin-left:14px}
+main{max-width:920px;margin:0 auto;padding:22px 28px}h2{font:600 17px var(--serif);border-bottom:1px solid var(--rule);padding-bottom:6px;margin:26px 0 12px}
+.card{border:1px solid var(--ink);background:var(--card);padding:14px 16px;margin:12px 0;box-shadow:4px 4px 0 var(--rule)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.tag{font:11px var(--mono);padding:2px 8px;border:1px solid var(--amber);color:var(--amber);text-transform:uppercase;letter-spacing:.06em}
+pre{font:12px/1.5 var(--mono);background:var(--paper);border:1px solid var(--rule);padding:8px 10px;overflow:auto;margin:8px 0}
+input{flex:1;min-width:180px;padding:8px 10px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font:inherit}
+button{padding:8px 16px;border:0;font-weight:600;cursor:pointer;color:#fff}.ok{background:var(--green)}.no{background:var(--rust)}
+.done{font:12px var(--mono);color:var(--mute);padding:6px 0;border-bottom:1px dotted var(--rule)}.empty{color:var(--mute);font-style:italic}
+</style></head><body>
+<header><h1>Reviewer Desk</h1><nav><a href="/">Customer chat</a><a href="/approvals">Reviewer desk</a></nav></header>
+<main><div id="auth" class="card" style="display:none"><div class="row"><strong>Reviewer sign-in</strong><input id="tok" type="password" placeholder="Admin token or OIDC bearer token" autocomplete="off"><button class="ok" id="signin">Sign in</button></div><div id="autherr" class="empty"></div></div>
+<h2>Awaiting your decision</h2><div id="pending"></div><h2>Recently decided</h2><div id="recent"></div></main>
+<script>
+const $=id=>document.getElementById(id);
+function el(t,c,x){const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+// Bearer token lives in sessionStorage only (cleared when the tab closes) and is sent in a header, never a cookie, so a
+// cross-site page cannot make the browser send an authenticated request (CSRF). The reviewer identity is set by the server.
+let TOK='';try{TOK=sessionStorage.getItem('sa_tok')||''}catch(e){}
+const H=()=>({'Authorization':'Bearer '+TOK,'Content-Type':'application/json'});
+function needAuth(msg){$('auth').style.display='block';$('autherr').textContent=msg||''}
+$('signin').onclick=()=>{TOK=$('tok').value.trim();try{sessionStorage.setItem('sa_tok',TOK)}catch(e){};$('tok').value='';load()};
+async function decide(id,approve,note){const r=await fetch('/api/approvals/'+id+'/decide',{method:'POST',headers:H(),body:JSON.stringify({approve,note})});
+ if(r.status===401||r.status===403)return needAuth('Not authorized ('+r.status+').');if(r.status===409)needAuth('That approval was already decided.');load()}
+async function load(){const r=await fetch('/api/approvals',{headers:H()});
+ if(r.status===401||r.status===403){needAuth(r.status===403?'Reviewer desk is disabled: the server has no SA_ADMIN_TOKEN / OIDC configured.':'Sign in with a reviewer token.');return}
+ $('auth').style.display='none';const d=await r.json();const p=$('pending');p.innerHTML='';
+ if(!d.pending.length)p.appendChild(el('div','empty','Nothing waiting. Trigger one from the customer chat (try "Refund ORD-1005" as C001).'));
+ d.pending.forEach(a=>{const c=el('div','card'),r=el('div','row');r.appendChild(el('strong','',a.tool));r.appendChild(el('span','tag',a.reason));r.appendChild(el('span','','session '+a.session_id));c.appendChild(r);
+  c.appendChild(el('div','',a.summary));c.appendChild(el('pre','',JSON.stringify(a.args,null,2)));
+  const f=el('div','row'),n=el('input');n.placeholder='Note (optional)';const y=el('button','ok','Approve'),x=el('button','no','Deny');
+  y.onclick=()=>decide(a.id,true,n.value);x.onclick=()=>decide(a.id,false,n.value);f.append(n,y,x);c.appendChild(f);p.appendChild(c)});
+ const rc=$('recent');rc.innerHTML='';d.recent.filter(a=>a.status!=='pending').forEach(a=>rc.appendChild(el('div','done',a.status.toUpperCase()+' · '+a.tool+' · '+JSON.stringify(a.args)+(a.note?' · "'+a.note+'"':''))))}
+load();setInterval(load,3000);
+</script></body></html>

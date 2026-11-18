@@ -1,0 +1,3 @@
+{"cache": "miss", "in_tok": 267, "out_tok": 529, "usd": 0.008736, "latency_s": 7.09, "http_requests": 1, "ts": 1794381359.21, "trial": null, "model": "gemini-3.6-flash"}
+{"cache": "miss", "in_tok": 138, "out_tok": 20, "usd": 2.2e-05, "latency_s": 2.56, "http_requests": 1, "ts": 1794381361.84, "trial": null, "model": "gemini-3.5-flash-lite"}
+{"cache": "miss", "in_tok": 660, "out_tok": 109, "usd": 0.00047, "latency_s": 7.79, "http_requests": 1, "ts": 1794381369.63, "trial": null, "model": "gemini-3.5-flash"}
